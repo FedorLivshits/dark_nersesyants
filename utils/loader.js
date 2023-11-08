@@ -257,7 +257,7 @@ export const load = {
     })
   },
   sounds: () => {
-    loadSound("jump", "./sounds/jump.wav")
+    // loadSound("jump", "./sounds/jump.wav")
     loadSound("jump_1", "./sounds/jump_1.wav")
     loadSound("jump_2", "./sounds/jump_2.wav")
     loadSound("jump_3", "./sounds/jump_3.wav")
@@ -267,6 +267,7 @@ export const load = {
     loadSound("jump_7", "./sounds/jump_7.wav")
     loadSound("jump_8", "./sounds/jump_8.wav")
     loadSound("jump_9", "./sounds/jump_9.wav")
+    loadSound("jump_10", "./sounds/jump_10.wav")
     loadSound("coin", "./sounds/coin.wav")
     loadSound("water-ambience", "./sounds/water-ambience.mp3")
     loadSound("hit", "./sounds/hit.wav")
