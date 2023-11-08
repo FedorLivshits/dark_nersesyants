@@ -37,9 +37,24 @@ const MIN_HEIGHT = 600
 
 if (viewportWidth < MIN_WIDTH || viewportHeight < MIN_HEIGHT) {
   alert(
-    "Экран устройства слишком маленький. Поижалуйста, поиграйте в полноэкранном режиме браузера на компьютере"
+    "Экран устройства слишком маленький. Пожалуйста, поиграйте в полноэкранном режиме браузера (chrome, edge, firefox) на компьютере"
   )
-  throw new Error("Screen too small")
+  throw new Error("Screen is too small")
+}
+
+function isSafari() {
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  const safari = /safari/.test(userAgent)
+  const chrome = /chrome/.test(userAgent)
+
+  return safari && !chrome
+}
+
+if (isSafari()) {
+  alert(
+    "Извините, эта игра не поддерживается в браузере Safari. Пожалуйста, используйте другой браузер."
+  )
+  throw new Error("This game doesn't work in Safari")
 }
 
 const scenes = {
