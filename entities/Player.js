@@ -89,7 +89,7 @@ export class Player {
       if (this.gameObj.isGrounded() && !this.isRespawning) {
         this.hasJumpedOnce = true
         this.gameObj.jump(this.jumpForce)
-        play(`jump_${Math.floor(Math.random() * 6) + 1}`)
+        play(`jump_${Math.floor(Math.random() * 9) + 1}`)
       }
 
       //coyote time
@@ -100,7 +100,7 @@ export class Player {
       ) {
         this.hasJumpedOnce = true
         this.gameObj.jump(this.jumpForce)
-        play(`jump_${Math.floor(Math.random() * 6) + 1}`)
+        play(`jump_${Math.floor(Math.random() * 9) + 1}`)
       }
     })
 

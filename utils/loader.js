@@ -264,9 +264,11 @@ export const load = {
     loadSound("jump_4", "./sounds/jump_4.wav")
     loadSound("jump_5", "./sounds/jump_5.wav")
     loadSound("jump_6", "./sounds/jump_6.wav")
+    loadSound("jump_7", "./sounds/jump_7.wav")
+    loadSound("jump_8", "./sounds/jump_8.wav")
+    loadSound("jump_9", "./sounds/jump_9.wav")
     loadSound("coin", "./sounds/coin.wav")
     loadSound("water-ambience", "./sounds/water-ambience.mp3")
-    // loadSound("spider-attack", "./sounds/spider-attack.mp3")
     loadSound("hit", "./sounds/hit.wav")
     loadSound("lava-ambience", "./sounds/lava.mp3")
     loadSound("confirm-ui", "./sounds/confirm-ui.wav")
@@ -274,6 +276,5 @@ export const load = {
     loadSound("saw", "./sounds/saw.wav")
     loadSound("fireball", "./sounds/fireball.wav")
     loadSound("strong-wind", "./sounds/strong-wind.mp3")
-    // loadSound("dive", "./sounds/dive.wav")
   }
 }
